@@ -1,0 +1,120 @@
+#music {
+  width: 375px;
+  height: 667px;
+  border-radius: 10px;
+  margin: 20px auto;
+  position: relative;
+  background: url(./image/1.jpeg) no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+#container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 375px;
+  height: 667px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.6);
+}
+/*实现背景图片透明，内容不透明*/
+.luo-img {
+  display: flex;
+  align-items: center;
+  flex: 3;
+}
+#musicImg {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  -webkit-animation: run 5s linear 2s infinite;
+  /* 动画名称 一次的时间 速度曲线 什么时候开始 循环次数 */
+}
+#musicImg:hover {
+  -webkit-animation-play-state: paused;
+} /* 鼠标移动上去 暂停动画*/
+@keyframes run {
+  from {
+    -webkit-transform: rotate(-360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+  }
+}
+#audio {
+  display: none;
+}
+#musicName {
+  font-size: 25px;
+  padding-top: 13px;
+  line-height: 20px;
+  color: grey;
+}
+.btn {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.button {
+  margin: 20px;
+  display: flex;
+  color: grey;
+  font-size: 35px;
+}
+.play-icon {
+  color: grey;
+  font-size: 20px;
+}
+.con-box {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+  width: 375px;
+}
+.redColor {
+  opacity: 1;
+  color: red !important;
+}
+.line {
+  /* 播放进度线 */
+  height: 3px;
+  width: 280px;
+  background: grey;
+  position: relative;
+  margin-bottom: 0px;
+}
+.current {
+  position: absolute; /* 进度条点 */
+  top: -2px;
+  left: 0px;
+  height: 7px;
+  width: 4px;
+  border-radius: 50%;
+  background: blue;
+}
+.current1 {
+  position: absolute; /* 进度条点 */
+
+  /* 进度条点 已经播放的部分做处理*/
+  /* border-radius: 50%; */
+  left: 0px;
+  top: 0px;
+  height: 3px;
+  width: 3px;
+  background: red;
+}
+.show {
+  display: none;
+}
+.icon-bofang {
+  font-size: 50px;
+}
+.icon-zanting {
+  font-size: 50px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>音乐播放器</title>
+    <link
+      rel="stylesheet"
+      href="http://at.alicdn.com/t/font_1153242_cchmhi7kkl9.css"
+    />
+    <link rel="stylesheet" href="music.css" />
+  </head>
+  <body>
+    <div id="music">
+      <div id="container">
+        <h3 id="musicName">陈雪凝-绿色</h3>
+        <div class="luo-img">
+          <img src="./image/1.jpeg" id="musicImg" />
+        </div>
+        <div class="con-box">
+          <!-- 播放模式 -->
+
+          <i class="play play-icon iconfont icon-xunhuan" id=""></i>
+
+          <i class="play play-icon iconfont icon-suijibofang" id=""></i>
+
+          <i class="play play-icon iconfont icon-danquxunhuan" id=""></i>
+          <!-- 音量控制 -->
+          <i class="play play-icon iconfont icon-yinliang-gao" id=""></i>
+          <i class="play play-icon iconfont icon-yinliang-di" id=""></i>
+        </div>
+        <div class="line">
+          <div class="current"></div>
+          <div class="current1"></div>
+        </div>
+        <audio src="./music/1.mp3" id="audio"></audio>
+        <div class="btn">
+          <!-- icon-shangyishou -->
+          <i class="button  iconfont icon-shangyishou" id="prev"></i>
+          <i class="button iconfont icon-bofang" id="play"></i>
+          <i class="button iconfont icon-zanting show " id="pause"></i>
+          <i class="button iconfont icon-xiayishou" id="next"></i>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="music.js"></script>
+  </body>
+</html>
